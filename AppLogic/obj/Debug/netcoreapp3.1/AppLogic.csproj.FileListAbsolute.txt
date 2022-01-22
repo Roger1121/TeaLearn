@@ -1,0 +1,13 @@
+C:\Users\leszc\Desktop\zajecia\KCK\projekt1\TeaLearn\AppLogic\bin\Debug\netcoreapp3.1\AppLogic.deps.json
+C:\Users\leszc\Desktop\zajecia\KCK\projekt1\TeaLearn\AppLogic\bin\Debug\netcoreapp3.1\AppLogic.dll
+C:\Users\leszc\Desktop\zajecia\KCK\projekt1\TeaLearn\AppLogic\bin\Debug\netcoreapp3.1\AppLogic.pdb
+C:\Users\leszc\Desktop\zajecia\KCK\projekt1\TeaLearn\AppLogic\obj\Debug\netcoreapp3.1\AppLogic.csproj.AssemblyReference.cache
+C:\Users\leszc\Desktop\zajecia\KCK\projekt1\TeaLearn\AppLogic\obj\Debug\netcoreapp3.1\AppLogic.AssemblyInfoInputs.cache
+C:\Users\leszc\Desktop\zajecia\KCK\projekt1\TeaLearn\AppLogic\obj\Debug\netcoreapp3.1\AppLogic.AssemblyInfo.cs
+C:\Users\leszc\Desktop\zajecia\KCK\projekt1\TeaLearn\AppLogic\obj\Debug\netcoreapp3.1\AppLogic.csproj.CoreCompileInputs.cache
+C:\Users\leszc\Desktop\zajecia\KCK\projekt1\TeaLearn\AppLogic\obj\Debug\netcoreapp3.1\AppLogic.dll
+C:\Users\leszc\Desktop\zajecia\KCK\projekt1\TeaLearn\AppLogic\obj\Debug\netcoreapp3.1\AppLogic.pdb
+C:\Users\leszc\Desktop\zajecia\KCK\projekt1\TeaLearn\AppLogic\bin\Debug\netcoreapp3.1\Interop.WMPLib.dll
+C:\Users\leszc\Desktop\zajecia\KCK\projekt1\TeaLearn\AppLogic\obj\Debug\netcoreapp3.1\Interop.WMPLib.dll
+C:\Users\leszc\Desktop\zajecia\KCK\projekt1\TeaLearn\AppLogic\obj\Debug\netcoreapp3.1\AppLogic.csproj.ResolveComReference.cache
+C:\Users\leszc\Desktop\zajecia\KCK\projekt1\TeaLearn\AppLogic\obj\Debug\netcoreapp3.1\AppLogic.GeneratedMSBuildEditorConfig.editorconfig

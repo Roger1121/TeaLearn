@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="assets\graphics\background.jpg" />
+    <None Remove="assets\graphics\flag.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AppLogic\AppLogic.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="assets\graphics\background.jpg" />
+    <Resource Include="assets\graphics\flag.jpg" />
+  </ItemGroup>
+
+</Project>

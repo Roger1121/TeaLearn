@@ -1,0 +1,77 @@
+﻿<Page x:Class="GUI.AddEnToPl"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GUI"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AddEnToPl">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/assets/graphics/background.jpg"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="8*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="8*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Viewbox Grid.Row="0" Margin="10">
+                <TextBlock Foreground="Peru"  HorizontalAlignment="Center" VerticalAlignment="Center">Tłumaczenie z angielskiego na polski</TextBlock>
+            </Viewbox>
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="10*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="4*"/>
+                    <ColumnDefinition Width="8*"/>
+                </Grid.ColumnDefinitions>
+                <Viewbox Grid.Row="0" Grid.Column="0" Margin="10">
+                    <TextBlock Foreground="Peru"  HorizontalAlignment="Center" VerticalAlignment="Center">Słowo do tłumaczenia</TextBlock>
+                </Viewbox>
+                <TextBox Grid.Row="0" Grid.Column="1" Name="word" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  TextAlignment="Left" Margin="10"></TextBox>
+                <Viewbox Grid.Row="1" Grid.Column="0" Margin="10">
+                    <TextBlock Foreground="Peru"  HorizontalAlignment="Center" VerticalAlignment="Center">Liczba tłumaczeń</TextBlock>
+                </Viewbox>
+                <Viewbox Grid.Row="1" Grid.Column="1" Margin="10">
+                    <ComboBox Name="count" SelectionChanged="count_SelectionChanged">
+
+                    </ComboBox>
+                </Viewbox>
+                <Viewbox Grid.Row="2" Grid.Column="0" Margin="10">
+                    <TextBlock Foreground="Peru"  HorizontalAlignment="Center" VerticalAlignment="Center">Tłumaczenia</TextBlock>
+                </Viewbox>
+                <ScrollViewer Grid.Row="2" Grid.Column="1" Margin="10" VerticalScrollBarVisibility="Auto">
+                    <StackPanel Name="translations">
+
+                    </StackPanel>
+                </ScrollViewer>
+            </Grid>
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="4*"/>
+                    <ColumnDefinition Width="4*"/>
+                    <ColumnDefinition Width="4*"/>
+                </Grid.ColumnDefinitions>
+                <Viewbox Grid.Column="1" Margin="5">
+                    <Button Click="Save">Zapisz</Button>
+                </Viewbox>
+                <Viewbox Grid.Column="2" Margin="5">
+                    <Button Click="Quit">Powrót</Button>
+                </Viewbox>
+            </Grid>
+        </Grid>
+        <Viewbox Grid.Column="0" Margin="40" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Image Source="/Assets/Graphics/flag.jpg"/>
+        </Viewbox>
+    </Grid>
+</Page>

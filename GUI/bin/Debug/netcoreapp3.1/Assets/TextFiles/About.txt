@@ -1,0 +1,32 @@
+Program został stworzony na potrzeby przedmiotu Komunikacja Człowiek-Komputer.
+Autor programu: Szymon Leszczyński, Informatyka, semestr V.
+Muzyka użyta w programie:
+
+Song: Valcos & Chris Linton - Without You [NCS Release]
+Music provided by NoCopyrightSounds
+Free Download/Stream: http://ncs.io/WithoutYou
+Watch: http://youtu.be/wdpGocMoipw
+
+Opis dostępnych ustawień:
+	Muzyka - Off (muzyka wyłączona) lub On (muzyka włączona)
+
+	Tryb treningu:
+		- Test - tryb testowania wiedzy, wyświetla serię pytań, a następnie liczbę uzyskanych za nie punktów,
+		- Trening - tryb nauki, po odpowiedzeniu na pytanie wyświetla się informacja o poprawności odpowiedzi, a w przypadku błędnej odpowiedzi - również odpowiedź prawidłowa,
+		- Nauka - tryb nauki, po odpowiedzeniu na pytanie wyświetla się informacja o poprawności odpowiedzi, w przypadku błędnej odpowiedzi nie jest wyświetlana odpowiedź poprawna.
+
+	Rodzaj zadań:
+		- Quiz - zadania typu zamkniętego z możliwością wskazania jednej spośród 2 do 5 opcji,
+		- Tłumaczenie z angielskiego na polski - zadania typu otwartego, gdzie użytkownik sam musi podać polskie tłumaczenie angielskiego słowa,
+		- Tłumaczenie z polskiego na angielski - zadania typu otwartego, gdzie użytkownik sam musi podać angielskie tłumaczenie polskiego słowa,
+		- Tłumaczenie - mieszany - zadania typu otwartego, gdzie użytkownik sam musi podać tłumaczenie słowa, możliwe tłumaczenie w obie strony PL->EN i EN->PL,
+		- Mieszany - w tym trybie możliwe jest otrzymanie każdego z wyżej opisanych typów zadań w losowej kolejności,
+		- Mieszany z rosnącym poziomem trudności - użytkownik otrzymuje zadania wszystkich wyżej wymienionych typów w poniższej kolejności:
+			- zamknięte z 2 odpowiedziami do wyboru,
+			- zamknięte z 3 odpowiedziami do wyboru,
+			- zamknięte z 4 odpowiedziami do wyboru,
+			- zamknięte z 5 odpowiedziami do wyboru,
+			- tłumaczenie z angielskiego na polski,
+			- tłumaczenie z polskiego na angielski.
+
+	Liczba pytań w teście: liczba pytań w pojedynczej serii w przypadku, gdy ustawiono tryb ćwiczeń "test".
