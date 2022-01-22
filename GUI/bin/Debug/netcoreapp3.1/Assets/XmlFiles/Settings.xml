@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Settings
-	music="On"
-	questionsInTest="3"
-	trainingMode="Nauka"
-	exerciseType="Quiz" />
+	music="Off"
+	questionsInTest="5"
+	trainingMode="Test"
+	exerciseType="Mieszany" />

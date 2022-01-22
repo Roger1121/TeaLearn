@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\leszc\\Desktop\\zajecia\\KCK\\projekt1\\TeaLearn\\AppLogic\\AppLogic.csproj": {}
+    "C:\\Users\\leszc\\Desktop\\TeaLearn\\AppLogic\\AppLogic.csproj": {}
   },
   "projects": {
-    "C:\\Users\\leszc\\Desktop\\zajecia\\KCK\\projekt1\\TeaLearn\\AppLogic\\AppLogic.csproj": {
+    "C:\\Users\\leszc\\Desktop\\TeaLearn\\AppLogic\\AppLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\leszc\\Desktop\\zajecia\\KCK\\projekt1\\TeaLearn\\AppLogic\\AppLogic.csproj",
+        "projectUniqueName": "C:\\Users\\leszc\\Desktop\\TeaLearn\\AppLogic\\AppLogic.csproj",
         "projectName": "AppLogic",
-        "projectPath": "C:\\Users\\leszc\\Desktop\\zajecia\\KCK\\projekt1\\TeaLearn\\AppLogic\\AppLogic.csproj",
+        "projectPath": "C:\\Users\\leszc\\Desktop\\TeaLearn\\AppLogic\\AppLogic.csproj",
         "packagesPath": "C:\\Users\\leszc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\leszc\\Desktop\\zajecia\\KCK\\projekt1\\TeaLearn\\AppLogic\\obj\\",
+        "outputPath": "C:\\Users\\leszc\\Desktop\\TeaLearn\\AppLogic\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

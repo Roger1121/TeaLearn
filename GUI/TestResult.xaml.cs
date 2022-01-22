@@ -23,21 +23,17 @@ namespace GUI
         List<Question> polishToEnglish;
         List<Question> englishToPolish;
         List<QuizQuestion> quiz;
-        int questionNumber;
-        int points;
 
-        public TestResult(Settings settings, List<Question> polishToEnglish, List<Question> englishToPolish, List<QuizQuestion> quiz, int questionNumber = 0, int points = 0)
+        public TestResult(Settings settings, List<Question> polishToEnglish, List<Question> englishToPolish, List<QuizQuestion> quiz)
         {
             this.settings = settings;
             this.polishToEnglish = polishToEnglish;
             this.englishToPolish = englishToPolish;
             this.quiz = quiz;
-            this.questionNumber = questionNumber;
-            this.points = points;
 
             InitializeComponent();
 
-            Result.Text = "Uzyskano " + points.ToString() + "/" + settings.QuestionsInTest.ToString() + " punktów";
+            Result.Text = "Uzyskano " + Logic.GetPoints().ToString() + "/" + Logic.GetMaxPoints().ToString() + " punktów";
         }
 
         private void Quit(object sender, RoutedEventArgs e)

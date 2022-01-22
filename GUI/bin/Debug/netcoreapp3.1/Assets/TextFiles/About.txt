@@ -1,5 +1,11 @@
-Program został stworzony na potrzeby przedmiotu Komunikacja Człowiek-Komputer.
-Autor programu: Szymon Leszczyński, Informatyka, semestr V.
+Program został stworzony na potrzeby przedmiotu Zaawansowane Techniki Programistyczne.
+
+Autorzy programu:
+	Magdalena Korecka
+	Szymon Leszczyński
+	Mateusz Karanowski
+	Michał Ciupa
+
 Muzyka użyta w programie:
 
 Song: Valcos & Chris Linton - Without You [NCS Release]

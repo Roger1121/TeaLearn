@@ -66,12 +66,12 @@ namespace AppLogic
                 foreach (var q in questions)
                 {
                     writer.WriteStartElement("Question");
-                    writer.WriteAttributeString("word", q.Word);
-                    foreach (var a in q.translations)
+                    writer.WriteAttributeString("word", q.GetWord());
+                    foreach (var a in q.GetTranslations())
                     {
                         writer.WriteElementString("Answer", a);
                     }
-                    writer.WriteElementString("CorrectAnswer", q.correctAnswer.ToString());
+                    writer.WriteElementString("CorrectAnswer", q.GetCorrectAnswer().ToString());
                     writer.WriteEndElement();
                 }
                 writer.WriteEndElement();
@@ -95,7 +95,7 @@ namespace AppLogic
                             }
                             else if (reader.Name == "Answer")
                             {
-                                question.translations.Add(reader.ReadElementContentAsString());
+                                question.AddTranslation(reader.ReadElementContentAsString());
                             }
                         }
                         else if (reader.NodeType == XmlNodeType.EndElement && reader.Name == "Question")
@@ -126,11 +126,11 @@ namespace AppLogic
                             }
                             else if (reader.Name == "Answer")
                             {
-                                question.translations.Add(reader.ReadElementContentAsString());
+                                question.AddTranslation(reader.ReadElementContentAsString());
                             }
                             else if (reader.Name == "CorrectAnswer")
                             {
-                                question.correctAnswer = reader.ReadElementContentAsInt();
+                                question.SetCorrectAnswer(reader.ReadElementContentAsInt());
                             }
                         }
                         else if (reader.NodeType== XmlNodeType.EndElement && reader.Name == "Question")
@@ -158,8 +158,8 @@ namespace AppLogic
                 foreach(var q in questions)
                 {
                     writer.WriteStartElement("Question");
-                    writer.WriteAttributeString("word", q.Word);
-                    foreach(var a in q.translations)
+                    writer.WriteAttributeString("word", q.GetWord());
+                    foreach(var a in q.GetTranslations())
                     {
                         writer.WriteElementString("Answer", a);
                     }

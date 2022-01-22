@@ -24,70 +24,75 @@ namespace GUI
         List<Question> englishToPolish;
         List<QuizQuestion> quiz;
         int questionNumber;
-        Question question;
-        int points;
+        IQuestion question;
 
-        public TranslationPage(Settings settings, List<Question> polishToEnglish, List<Question> englishToPolish, List<QuizQuestion> quiz, int questionNumber = 0, int points = 0)
+        public TranslationPage(Settings settings, List<Question> polishToEnglish, List<Question> englishToPolish, List<QuizQuestion> quiz, int questionNumber = 0)
         {
             this.settings = settings;
             this.polishToEnglish = polishToEnglish;
             this.englishToPolish = englishToPolish;
             this.quiz = quiz;
             this.questionNumber = questionNumber;
-            this.points = points;
+
+            if(questionNumber == 0)
+            {
+                Logic.ClearPoints();
+                Logic.ClearMaxPoints();
+            }
 
             if (settings.ExerciseType == "Tłumaczenie z polskiego na angielski" || (settings.ExerciseType== "Mieszany z rosnącym poziomem trudności" && questionNumber < 25))
             {
-                question = Logic.GetRandomQuestion(polishToEnglish);
+                question = new QuestionHard(Logic.GetRandomQuestion(polishToEnglish));
             }
             else if(settings.ExerciseType == "Tłumaczenie z angielskiego na polski" || (settings.ExerciseType == "Mieszany z rosnącym poziomem trudności" && questionNumber < 30))
             {
-                question = Logic.GetRandomQuestion(englishToPolish);
+                question = new QuestionHard(Logic.GetRandomQuestion(englishToPolish));
             }
             else
             {
-                question = Logic.GetRandomQuestion(polishToEnglish, englishToPolish);
+                question = new QuestionHard(Logic.GetRandomQuestion(polishToEnglish, englishToPolish));
             }
 
             InitializeComponent();
 
-            QuestionText.Text = "Co oznacza słowo " + question.Word + "?";
+            QuestionText.Text = "Co oznacza słowo " + question.GetWord() + "?";
         }
 
         private void Check(object sender, RoutedEventArgs e)
         {
             Random rnd = new Random();
-            if (Logic.IsAnswerCorrect(question.translations, answer.Text))
+            Logic.AddMaxPoints(question.GetPoints());
+            if (Logic.IsAnswerCorrect(question.GetTranslations(), answer.Text))
             {
-                points++;
+                Logic.AddPoints(question.GetPoints());
             }
             if(settings.TrainingMode == "Test" && questionNumber+1 == settings.QuestionsInTest)
             {
-                TestResult testResult = new TestResult(settings, polishToEnglish, englishToPolish, quiz, questionNumber + 1, points);
+                TestResult testResult = new TestResult(settings, polishToEnglish, englishToPolish, quiz);
                 NavigationService.Navigate(testResult);
             }
             else if (settings.ExerciseType == "Mieszany")
             {
                 if (settings.TrainingMode == "Trening")
                 {
-                    if (!Logic.IsAnswerCorrect(question.translations, answer.Text))
+                    if (!Logic.IsAnswerCorrect(question.GetTranslations(), answer.Text))
                     {
-                        MessageBox.Show("Niestety nie, akceptowane odpowiedzi, to: " + string.Join(", ", question.translations), "", MessageBoxButton.OK);
+                        MessageBox.Show("Niestety nie, akceptowane odpowiedzi, to: " + string.Join(", ", question.GetTranslations()), "", MessageBoxButton.OK);
                     }
                     if (rnd.Next(6) <= 3)
                     {
-                        QuizPage quizPage = new QuizPage(settings, polishToEnglish, englishToPolish, quiz, questionNumber + 1, points);
+                        QuizPage quizPage = new QuizPage(settings, polishToEnglish, englishToPolish, quiz, questionNumber + 1);
                         NavigationService.Navigate(quizPage);
                     }
                     else
                     {
-                        TranslationPage translationPage = new TranslationPage(settings, polishToEnglish, englishToPolish, quiz, questionNumber + 1, points);
+                        TranslationPage translationPage = new TranslationPage(settings, polishToEnglish, englishToPolish, quiz, questionNumber + 1);
                         NavigationService.Navigate(translationPage);
                     }
                 }
                 else if (settings.TrainingMode == "Nauka")
                 {
-                    if (!Logic.IsAnswerCorrect(question.translations, answer.Text))
+                    if (!Logic.IsAnswerCorrect(question.GetTranslations(), answer.Text))
                     {
                         MessageBoxResult result = MessageBox.Show("Błędna odpowiedź, czy chcesz spróbować ponownie?", "", MessageBoxButton.YesNo);
                         switch (result)
@@ -104,12 +109,12 @@ namespace GUI
                     {
                         if (rnd.Next(6) <= 3)
                         {
-                            QuizPage quizPage = new QuizPage(settings, polishToEnglish, englishToPolish, quiz, questionNumber + 1, points);
+                            QuizPage quizPage = new QuizPage(settings, polishToEnglish, englishToPolish, quiz, questionNumber + 1);
                             NavigationService.Navigate(quizPage);
                         }
                         else
                         {
-                            TranslationPage translationPage = new TranslationPage(settings, polishToEnglish, englishToPolish, quiz, questionNumber + 1, points);
+                            TranslationPage translationPage = new TranslationPage(settings, polishToEnglish, englishToPolish, quiz, questionNumber + 1);
                             NavigationService.Navigate(translationPage);
                         }
                     }
@@ -118,12 +123,12 @@ namespace GUI
                 {
                     if (rnd.Next(6) <= 3)
                     {
-                        QuizPage quizPage = new QuizPage(settings, polishToEnglish, englishToPolish, quiz, questionNumber + 1, points);
+                        QuizPage quizPage = new QuizPage(settings, polishToEnglish, englishToPolish, quiz, questionNumber + 1);
                         NavigationService.Navigate(quizPage);
                     }
                     else
                     {
-                        TranslationPage translationPage = new TranslationPage(settings, polishToEnglish, englishToPolish, quiz, questionNumber + 1, points);
+                        TranslationPage translationPage = new TranslationPage(settings, polishToEnglish, englishToPolish, quiz, questionNumber + 1);
                         NavigationService.Navigate(translationPage);
                     }
                 }
@@ -132,16 +137,16 @@ namespace GUI
             {
                 if(settings.TrainingMode == "Trening")
                 {
-                    if (!Logic.IsAnswerCorrect(question.translations, answer.Text))
+                    if (!Logic.IsAnswerCorrect(question.GetTranslations(), answer.Text))
                     {
-                        MessageBox.Show("Niestety nie, akceptowane odpowiedzi, to: " + string.Join(", ", question.translations), "", MessageBoxButton.OK);
+                        MessageBox.Show("Niestety nie, akceptowane odpowiedzi, to: " + string.Join(", ", question.GetTranslations()), "", MessageBoxButton.OK);
                     }
-                    TranslationPage translationPage = new TranslationPage(settings, polishToEnglish, englishToPolish, quiz, questionNumber + 1, points);
+                    TranslationPage translationPage = new TranslationPage(settings, polishToEnglish, englishToPolish, quiz, questionNumber + 1);
                     NavigationService.Navigate(translationPage);
                 }
                 else if(settings.TrainingMode == "Nauka")
                 {
-                    if (!Logic.IsAnswerCorrect(question.translations, answer.Text))
+                    if (!Logic.IsAnswerCorrect(question.GetTranslations(), answer.Text))
                     {
                         MessageBoxResult result = MessageBox.Show("Błędna odpowiedź, czy chcesz spróbować ponownie?", "", MessageBoxButton.YesNo);
                         switch (result)
@@ -156,13 +161,13 @@ namespace GUI
                     }
                     else
                     {
-                        TranslationPage translationPage = new TranslationPage(settings, polishToEnglish, englishToPolish, quiz, questionNumber + 1, points);
+                        TranslationPage translationPage = new TranslationPage(settings, polishToEnglish, englishToPolish, quiz, questionNumber + 1);
                         NavigationService.Navigate(translationPage);
                     }
                 }
                 else
                 {
-                    TranslationPage translationPage = new TranslationPage(settings, polishToEnglish, englishToPolish, quiz, questionNumber + 1, points);
+                    TranslationPage translationPage = new TranslationPage(settings, polishToEnglish, englishToPolish, quiz, questionNumber + 1);
                     NavigationService.Navigate(translationPage);
                 }
             }

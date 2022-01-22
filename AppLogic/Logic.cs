@@ -4,24 +4,6 @@ using WMPLib;
 
 namespace AppLogic
 {
-    public class Question
-    {
-        public Question(string word)
-        {
-            Word = word;
-            translations = new List<string>();
-        }
-        public string Word { get; set; }
-        public List<string> translations;
-    }
-
-    public class QuizQuestion : Question
-    {
-        public QuizQuestion(string word) : base(word) { }
-
-        public int correctAnswer;
-    }
-
     public class Settings
     {
         private static Settings instance;
@@ -34,7 +16,7 @@ namespace AppLogic
 
         private Settings()
         {
-            Music = "On";
+            Music = "Off";
             TrainingMode = "Quiz";
             ExerciseType = "Trening";
             QuestionsInTest = 10;
@@ -47,6 +29,39 @@ namespace AppLogic
     }
     public static class Logic
     {
+        private static int points;
+        private static int maxPoints;
+
+        public static void AddPoints(int p)
+        {
+            points += p;
+        }
+
+        public static void AddMaxPoints(int p)
+        {
+            maxPoints += p;
+        }
+
+        public static int GetPoints()
+        {
+            return points;
+        }
+
+        public static int GetMaxPoints()
+        {
+            return maxPoints;
+        }
+
+        public static void ClearPoints()
+        {
+            points = 0;
+        }
+
+        public static void ClearMaxPoints()
+        {
+            maxPoints = 0;
+        }
+
         private static readonly WindowsMediaPlayer player = new WindowsMediaPlayer()
         {
             URL = @".\Assets\Music\WithoutYou.mp3"
@@ -76,7 +91,9 @@ namespace AppLogic
             Files.GetQuestionsFromXML(englishToPolish, "EnglishToPolish.xml");
             Files.GetQuizQuestionsFromXML(quiz, "Quiz.xml");
             if (settings.Music == "On")
+            {
                 PlayMusic();
+            }
         }
 
         public static void StopMusic()
@@ -101,20 +118,22 @@ namespace AppLogic
 
         public static void AddTranslation(List<Question> translations, string word, List<string> answers)
         {
-            var question = new Question(word)
+            var question = new Question(word);
+            foreach(var a in answers)
             {
-                translations = answers
-            };
+                question.AddTranslation(a);
+            }
             translations.Add(question);
         }
 
         public static void AddQuizQuestion(List<QuizQuestion> quiz, string word, List<string> answers, int number)
         {
-            var quizQuestion = new QuizQuestion(word)
+            var quizQuestion = new QuizQuestion(word);
+            foreach (var a in answers)
             {
-                translations = answers,
-                correctAnswer = number,
-            };
+                quizQuestion.AddTranslation(a);
+            }
+            quizQuestion.SetCorrectAnswer(number);
             quiz.Add(quizQuestion);
         }
 
@@ -133,26 +152,26 @@ namespace AppLogic
             Random rnd = new Random();
             int index = rnd.Next(quiz.Count);
             QuizQuestion temp = quiz[index];
-            QuizQuestion question = new QuizQuestion(temp.Word);
+            QuizQuestion question = new QuizQuestion(temp.GetWord());
             int answerCount = (numberOfAnswers == 0 ? rnd.Next(2, 6) : numberOfAnswers);
 
-            while (question.translations.Count < answerCount)
+            while (question.GetTranslations().Count < answerCount)
             {
-                string answer = temp.translations[rnd.Next(5)];
-                if (!question.translations.Contains(answer))
+                string answer = temp.GetTranslations()[rnd.Next(5)];
+                if (!question.GetTranslations().Contains(answer))
                 {
-                    question.translations.Add(answer);
-                    if (answer == temp.translations[temp.correctAnswer - 1])
+                    question.AddTranslation(answer);
+                    if (answer == temp.GetTranslations()[temp.GetCorrectAnswer() - 1])
                     {
-                        question.correctAnswer = question.translations.Count;
+                        question.SetCorrectAnswer(question.GetTranslations().Count);
                     }
                 }
             }
-            if (!question.translations.Contains(temp.translations[temp.correctAnswer - 1]))
+            if (!question.GetTranslations().Contains(temp.GetTranslations()[temp.GetCorrectAnswer() - 1]))
             {
                 int correctIndex = rnd.Next(answerCount);
-                question.translations[correctIndex] = temp.translations[temp.correctAnswer - 1];
-                question.correctAnswer = correctIndex + 1;
+                question.SetTranslation(temp.GetTranslations()[temp.GetCorrectAnswer() - 1], correctIndex);
+                question.SetCorrectAnswer(correctIndex + 1);
             }
             return question;
         }
