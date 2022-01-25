@@ -16,6 +16,7 @@ namespace AppLogic
         int GetCorrectAnswer();
         void SetCorrectAnswer(int c);
         MementoQuestion Save(int userAnswer);
+        MementoQuestion Save(string userAnswer);
         void Restore(MementoQuestion memento);
     }
 
@@ -66,15 +67,23 @@ namespace AppLogic
         }
         public MementoQuestion Save(int userAnswer)
         {
+            MementoQuestion memento = new MementoQuestion(this.word, this.translations, userAnswer, GetCorrectAnswer());
+
+            return memento;
+        }
+
+        public MementoQuestion Save(string userAnswer)
+        {
             MementoQuestion memento = new MementoQuestion(this.word, this.translations, userAnswer);
 
             return memento;
         }
+
         public void Restore(MementoQuestion memento)
         {
-            Question q = memento.getStateQuestion();
-            this.word = q.word;
-            this.translations = q.translations;
+            IQuestion q = memento.getStateQuestion();
+            this.word = q.GetWord();
+            this.translations = q.GetTranslations();
         }
     }
 
@@ -105,6 +114,7 @@ namespace AppLogic
         public abstract int GetCorrectAnswer();
         public abstract void SetCorrectAnswer(int c);
         public abstract MementoQuestion Save(int userAnswer);
+        public abstract MementoQuestion Save(string userAnswer);
         public abstract void Restore(MementoQuestion memento);
     }
 
@@ -153,6 +163,12 @@ namespace AppLogic
         }
         public override MementoQuestion Save(int userAnswer)
         {
+            MementoQuestion memento = new MementoQuestion(GetWord(), GetTranslations(), userAnswer, GetCorrectAnswer());
+
+            return memento;
+        }
+        public override MementoQuestion Save(string userAnswer)
+        {
             MementoQuestion memento = new MementoQuestion(GetWord(), GetTranslations(), userAnswer);
 
             return memento;
@@ -160,7 +176,7 @@ namespace AppLogic
 
         public override void Restore(MementoQuestion memento)
         {
-            Question q = memento.getStateQuestion();
+            IQuestion q = memento.getStateQuestion();
             question.SetWord(q.GetWord());
             question.ClearTranslations();
             List<string> t = q.GetTranslations();
@@ -218,13 +234,19 @@ namespace AppLogic
         }
         public override MementoQuestion Save(int userAnswer)
         {
+            MementoQuestion memento = new MementoQuestion(GetWord(), GetTranslations(), userAnswer, GetCorrectAnswer());
+
+            return memento;
+        }
+        public override MementoQuestion Save(string userAnswer)
+        {
             MementoQuestion memento = new MementoQuestion(GetWord(), GetTranslations(), userAnswer);
 
             return memento;
         }
         public override void Restore(MementoQuestion memento)
         {
-            Question q = memento.getStateQuestion();
+            IQuestion q = memento.getStateQuestion();
             question.SetWord(q.GetWord());
             question.ClearTranslations();
             List<string> t = q.GetTranslations();
@@ -281,13 +303,19 @@ namespace AppLogic
         }
         public override MementoQuestion Save(int userAnswer)
         {
+            MementoQuestion memento = new MementoQuestion(GetWord(), GetTranslations(), userAnswer, GetCorrectAnswer());
+
+            return memento;
+        }
+        public override MementoQuestion Save(string userAnswer)
+        {
             MementoQuestion memento = new MementoQuestion(GetWord(), GetTranslations(), userAnswer);
 
             return memento;
         }
         public override void Restore(MementoQuestion memento)
         {
-            Question q = memento.getStateQuestion();
+            IQuestion q = memento.getStateQuestion();
             question.SetWord(q.GetWord());
             question.ClearTranslations();
             List<string> t = q.GetTranslations();

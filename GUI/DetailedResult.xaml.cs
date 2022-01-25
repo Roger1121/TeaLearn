@@ -33,7 +33,41 @@ namespace GUI
 
             InitializeComponent();
 
-            
+            TextBlock blockTitle = new TextBlock();
+            blockTitle.Name = "title";
+            string text1 = "Słowo   podane tłumaczenie  poprawność odpowiedzi";
+            blockTitle.Text = text1;
+            blockTitle.Foreground = Brushes.Peru;
+            blockTitle.FontSize = 22;
+            questions.Children.Add(blockTitle);
+            blockTitle.RegisterName(blockTitle.Name, blockTitle);
+            int i = 1;
+            foreach (var q in Logic.history)
+            {
+                TextBlock block = new TextBlock();
+                block.Name = "question" + (i++).ToString();
+                block.Foreground = Brushes.Peru;
+                block.FontSize = 22;
+                
+                string text = q.getStateQuestion().GetWord() + "              ";
+                if (!string.IsNullOrEmpty(q.getStateTextAnswer()))
+                {
+                    text += q.getStateTextAnswer() + (Logic.IsAnswerCorrect(q.getStateQuestion().GetTranslations(),q.getStateTextAnswer()) ? "      <- poprawna odpowiedź" : "      <-nieprawidłowa odpowiedź");
+                }
+                else
+                {
+                    text += q.getStateQuestion().GetTranslations()[q.getStateUserAnswer() - 1] +"              "+ q.getStateQuestion().GetTranslations()[q.GetCorrectAnswer() - 1];
+                }
+                block.Text = text;
+                questions.Children.Add(block);
+                block.RegisterName(block.Name, block);
+            }
+        }
+
+        private void Quit(object sender, RoutedEventArgs e)
+        {
+            MainMenu menu = new MainMenu(settings, polishToEnglish, englishToPolish, quiz);
+            NavigationService.Navigate(menu);
         }
     }
 }

@@ -128,3 +128,5 @@ D:\Dokumenty\Studia\05.SEMESTR V\ZTP\projekt\TeaLearn\GUI\obj\Debug\netcoreapp3.
 D:\Dokumenty\Studia\05.SEMESTR V\ZTP\projekt\TeaLearn\GUI\obj\Debug\netcoreapp3.1\GUI.pdb
 D:\Dokumenty\Studia\05.SEMESTR V\ZTP\projekt\TeaLearn\GUI\obj\Debug\netcoreapp3.1\GUI.genruntimeconfig.cache
 D:\Dokumenty\Studia\05.SEMESTR V\ZTP\projekt\TeaLearn\GUI\obj\Debug\netcoreapp3.1\DetailedResult.g.cs
+C:\Users\leszc\Desktop\TeaLearn\GUI\obj\Debug\netcoreapp3.1\DetailedResult.g.cs
+C:\Users\leszc\Desktop\TeaLearn\GUI\obj\Debug\netcoreapp3.1\DetailedResult.baml
