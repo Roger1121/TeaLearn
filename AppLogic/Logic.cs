@@ -64,15 +64,10 @@ namespace AppLogic
         {
             private List<QuizQuestion> questionsQuiz;
 
-            //
             public MyIterator(List<QuizQuestion> quiz)
             {
                 this.questionsQuiz = quiz;
             }
-            // Random rnd = new Random();
-            //int index = rnd.Next(questionsQuiz.Count);
-            // QuizQuestion temp = questionsQuiz[index];
-            //QuizQuestion question = new QuizQuestion(temp.GetWord());
 
             public IEnumerator<QuizQuestion> GetEnumerator()
             {

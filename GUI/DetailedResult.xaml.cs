@@ -32,36 +32,54 @@ namespace GUI
             this.quiz = quiz;
 
             InitializeComponent();
-
-            TextBlock blockTitle = new TextBlock();
-            blockTitle.Name = "title";
-            string text1 = "Słowo   podane tłumaczenie  poprawność odpowiedzi";
-            blockTitle.Text = text1;
-            blockTitle.Foreground = Brushes.Peru;
-            blockTitle.FontSize = 22;
-            questions.Children.Add(blockTitle);
-            blockTitle.RegisterName(blockTitle.Name, blockTitle);
-            int i = 1;
+            Grid grid = SetLine("Słowo", "Odpowiedź użytkownika", "Odpowiedź/Komentarz");
+            questions.Children.Add(grid);
+            
             foreach (var q in Logic.history)
             {
-                TextBlock block = new TextBlock();
-                block.Name = "question" + (i++).ToString();
-                block.Foreground = Brushes.Peru;
-                block.FontSize = 22;
-                
-                string text = q.getStateQuestion().GetWord() + "              ";
                 if (!string.IsNullOrEmpty(q.getStateTextAnswer()))
                 {
-                    text += q.getStateTextAnswer() + (Logic.IsAnswerCorrect(q.getStateQuestion().GetTranslations(),q.getStateTextAnswer()) ? "      <- poprawna odpowiedź" : "      <-nieprawidłowa odpowiedź");
+                    grid = SetLine(q.getStateQuestion().GetWord(), q.getStateTextAnswer(), (Logic.IsAnswerCorrect(q.getStateQuestion().GetTranslations(), q.getStateTextAnswer()) ? "poprawna odpowiedź" : "nieprawidłowa odpowiedź"));
                 }
                 else
                 {
-                    text += q.getStateQuestion().GetTranslations()[q.getStateUserAnswer() - 1] +"              "+ q.getStateQuestion().GetTranslations()[q.GetCorrectAnswer() - 1];
+                    grid = SetLine(q.getStateQuestion().GetWord(), q.getStateQuestion().GetTranslations()[q.getStateUserAnswer() - 1], q.getStateQuestion().GetTranslations()[q.GetCorrectAnswer() - 1]);
                 }
-                block.Text = text;
-                questions.Children.Add(block);
-                block.RegisterName(block.Name, block);
+                questions.Children.Add(grid);
             }
+        }
+        private Grid SetLine(string text1, string text2, string text3)
+        {
+            Grid grid = new Grid();
+            grid.Height = 50;
+            ColumnDefinition gridCol1 = new ColumnDefinition();
+            ColumnDefinition gridCol2 = new ColumnDefinition();
+            ColumnDefinition gridCol3 = new ColumnDefinition();
+            gridCol1.Width = new GridLength(1, GridUnitType.Star);
+            gridCol2.Width = new GridLength(1, GridUnitType.Star);
+            gridCol3.Width = new GridLength(1, GridUnitType.Star);
+            grid.ColumnDefinitions.Add(gridCol1);
+            grid.ColumnDefinitions.Add(gridCol2);
+            grid.ColumnDefinitions.Add(gridCol3);
+            TextBlock block1 = new TextBlock();
+            TextBlock block2 = new TextBlock();
+            TextBlock block3 = new TextBlock();
+            block1.Text = text1;
+            block2.Text = text2;
+            block3.Text = text3;
+            block1.Foreground = Brushes.Peru;
+            block2.Foreground = Brushes.Peru;
+            block3.Foreground = Brushes.Peru;
+            block1.FontSize = 22;
+            block2.FontSize = 22;
+            block3.FontSize = 22;
+            Grid.SetColumn(block1, 0);
+            Grid.SetColumn(block2, 1);
+            Grid.SetColumn(block3, 2);
+            grid.Children.Add(block1);
+            grid.Children.Add(block2);
+            grid.Children.Add(block3);
+            return grid;
         }
 
         private void Quit(object sender, RoutedEventArgs e)
