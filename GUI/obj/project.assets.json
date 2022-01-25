@@ -27,25 +27,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\leszc\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Strix\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\leszc\\Desktop\\TeaLearn\\GUI\\GUI.csproj",
+      "projectUniqueName": "D:\\Dokumenty\\Studia\\05.SEMESTR V\\ZTP\\projekt\\TeaLearn\\GUI\\GUI.csproj",
       "projectName": "GUI",
-      "projectPath": "C:\\Users\\leszc\\Desktop\\TeaLearn\\GUI\\GUI.csproj",
-      "packagesPath": "C:\\Users\\leszc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\leszc\\Desktop\\TeaLearn\\GUI\\obj\\",
+      "projectPath": "D:\\Dokumenty\\Studia\\05.SEMESTR V\\ZTP\\projekt\\TeaLearn\\GUI\\GUI.csproj",
+      "packagesPath": "C:\\Users\\Strix\\.nuget\\packages\\",
+      "outputPath": "D:\\Dokumenty\\Studia\\05.SEMESTR V\\ZTP\\projekt\\TeaLearn\\GUI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\leszc\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Strix\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -58,8 +58,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\leszc\\Desktop\\TeaLearn\\AppLogic\\AppLogic.csproj": {
-              "projectPath": "C:\\Users\\leszc\\Desktop\\TeaLearn\\AppLogic\\AppLogic.csproj"
+            "D:\\Dokumenty\\Studia\\05.SEMESTR V\\ZTP\\projekt\\TeaLearn\\AppLogic\\AppLogic.csproj": {
+              "projectPath": "D:\\Dokumenty\\Studia\\05.SEMESTR V\\ZTP\\projekt\\TeaLearn\\AppLogic\\AppLogic.csproj"
             }
           }
         }
@@ -91,7 +91,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

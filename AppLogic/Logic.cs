@@ -31,6 +31,12 @@ namespace AppLogic
     {
         private static int points;
         private static int maxPoints;
+        public static List<MementoQuestion> history;
+
+        public static void ClearHistory()
+        {
+            history = null;
+        }
 
         public static void AddPoints(int p)
         {
@@ -197,5 +203,7 @@ namespace AppLogic
             }
             return question;
         }
+
+        
     }
 }

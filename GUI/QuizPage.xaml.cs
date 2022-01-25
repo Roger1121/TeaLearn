@@ -84,6 +84,7 @@ namespace GUI
         {
             Button button = sender as Button;
             Random rnd = new Random();
+            Logic.history.Add(new MementoQuestion(question, int.Parse(button.Name.Substring(6, 1))));
             Logic.AddMaxPoints(question.GetPoints());
             if (Logic.IsAnswerCorrect(question.GetCorrectAnswer(), int.Parse(button.Name.Substring(6, 1))))
             {

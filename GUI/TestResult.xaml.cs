@@ -81,5 +81,11 @@ namespace GUI
                     break;
             }
         }
+
+        private void ShowTest(object sender, RoutedEventArgs e)
+        {
+            DetailedResult quizPageAscending = new DetailedResult(settings, polishToEnglish, englishToPolish, quiz);
+            NavigationService.Navigate(quizPageAscending);
+        }
     }
 }

@@ -19,11 +19,14 @@
         <Grid Grid.Column="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="2*"/>
-                <RowDefinition Height="2*"/>
-                <RowDefinition Height="1*"/>
-                <RowDefinition Height="2*"/>
+                <RowDefinition Height="5*"/>
                 <RowDefinition Height="1*"/>
             </Grid.RowDefinitions>
+            <ScrollViewer Grid.Row="1" Grid.Column="1" Margin="10" VerticalScrollBarVisibility="Auto">
+                <StackPanel Name="questions">
+
+                </StackPanel>
+            </ScrollViewer>
             <Viewbox  Grid.Row="0" Margin="15">
                 <TextBlock Foreground="Peru"  HorizontalAlignment="Center" VerticalAlignment="Center">Wynik testu</TextBlock>
             </Viewbox>
@@ -36,12 +39,7 @@
                     <ColumnDefinition Width="4*"/>
                     <ColumnDefinition Width="4*"/>
                 </Grid.ColumnDefinitions>
-                <Viewbox Grid.Column="0" Margin="10">
-                    <Button HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="DemiBold" Click="ShowTest">Pokaż wyniki</Button>
-                </Viewbox>
-                <Viewbox Grid.Column="1" Margin="10">
-                    <Button HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="DemiBold" Click="Retry">Spróbuj ponownie</Button>
-                </Viewbox>
+                
                 <Viewbox Grid.Column="2" Margin="10">
                     <Button HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="DemiBold" Click="Quit">Powrót</Button>
                 </Viewbox>

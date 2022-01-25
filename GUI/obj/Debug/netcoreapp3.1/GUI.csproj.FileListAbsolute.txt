@@ -84,3 +84,47 @@ C:\Users\leszc\Desktop\TeaLearn\GUI\obj\Debug\netcoreapp3.1\GUI.csproj.CopyCompl
 C:\Users\leszc\Desktop\TeaLearn\GUI\obj\Debug\netcoreapp3.1\GUI.dll
 C:\Users\leszc\Desktop\TeaLearn\GUI\obj\Debug\netcoreapp3.1\GUI.pdb
 C:\Users\leszc\Desktop\TeaLearn\GUI\obj\Debug\netcoreapp3.1\GUI.genruntimeconfig.cache
+D:\Dokumenty\Studia\05.SEMESTR V\ZTP\projekt\TeaLearn\GUI\bin\Debug\netcoreapp3.1\GUI.exe
+D:\Dokumenty\Studia\05.SEMESTR V\ZTP\projekt\TeaLearn\GUI\bin\Debug\netcoreapp3.1\GUI.deps.json
+D:\Dokumenty\Studia\05.SEMESTR V\ZTP\projekt\TeaLearn\GUI\bin\Debug\netcoreapp3.1\GUI.runtimeconfig.json
+D:\Dokumenty\Studia\05.SEMESTR V\ZTP\projekt\TeaLearn\GUI\bin\Debug\netcoreapp3.1\GUI.runtimeconfig.dev.json
+D:\Dokumenty\Studia\05.SEMESTR V\ZTP\projekt\TeaLearn\GUI\bin\Debug\netcoreapp3.1\GUI.dll
+D:\Dokumenty\Studia\05.SEMESTR V\ZTP\projekt\TeaLearn\GUI\bin\Debug\netcoreapp3.1\GUI.pdb
+D:\Dokumenty\Studia\05.SEMESTR V\ZTP\projekt\TeaLearn\GUI\bin\Debug\netcoreapp3.1\AppLogic.dll
+D:\Dokumenty\Studia\05.SEMESTR V\ZTP\projekt\TeaLearn\GUI\bin\Debug\netcoreapp3.1\AppLogic.pdb
+D:\Dokumenty\Studia\05.SEMESTR V\ZTP\projekt\TeaLearn\GUI\obj\Debug\netcoreapp3.1\GUI.csproj.AssemblyReference.cache
+D:\Dokumenty\Studia\05.SEMESTR V\ZTP\projekt\TeaLearn\GUI\obj\Debug\netcoreapp3.1\About.g.cs
+D:\Dokumenty\Studia\05.SEMESTR V\ZTP\projekt\TeaLearn\GUI\obj\Debug\netcoreapp3.1\AddEnToPl.g.cs
+D:\Dokumenty\Studia\05.SEMESTR V\ZTP\projekt\TeaLearn\GUI\obj\Debug\netcoreapp3.1\AddPlToEn.g.cs
+D:\Dokumenty\Studia\05.SEMESTR V\ZTP\projekt\TeaLearn\GUI\obj\Debug\netcoreapp3.1\AddQuiz.g.cs
+D:\Dokumenty\Studia\05.SEMESTR V\ZTP\projekt\TeaLearn\GUI\obj\Debug\netcoreapp3.1\MainMenu.g.cs
+D:\Dokumenty\Studia\05.SEMESTR V\ZTP\projekt\TeaLearn\GUI\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+D:\Dokumenty\Studia\05.SEMESTR V\ZTP\projekt\TeaLearn\GUI\obj\Debug\netcoreapp3.1\QuestionMenu.g.cs
+D:\Dokumenty\Studia\05.SEMESTR V\ZTP\projekt\TeaLearn\GUI\obj\Debug\netcoreapp3.1\QuizPage.g.cs
+D:\Dokumenty\Studia\05.SEMESTR V\ZTP\projekt\TeaLearn\GUI\obj\Debug\netcoreapp3.1\SettingsScreen.g.cs
+D:\Dokumenty\Studia\05.SEMESTR V\ZTP\projekt\TeaLearn\GUI\obj\Debug\netcoreapp3.1\TestResult.g.cs
+D:\Dokumenty\Studia\05.SEMESTR V\ZTP\projekt\TeaLearn\GUI\obj\Debug\netcoreapp3.1\TranslationPage.g.cs
+D:\Dokumenty\Studia\05.SEMESTR V\ZTP\projekt\TeaLearn\GUI\obj\Debug\netcoreapp3.1\App.g.cs
+D:\Dokumenty\Studia\05.SEMESTR V\ZTP\projekt\TeaLearn\GUI\obj\Debug\netcoreapp3.1\GUI_MarkupCompile.cache
+D:\Dokumenty\Studia\05.SEMESTR V\ZTP\projekt\TeaLearn\GUI\obj\Debug\netcoreapp3.1\GUI_MarkupCompile.lref
+D:\Dokumenty\Studia\05.SEMESTR V\ZTP\projekt\TeaLearn\GUI\obj\Debug\netcoreapp3.1\About.baml
+D:\Dokumenty\Studia\05.SEMESTR V\ZTP\projekt\TeaLearn\GUI\obj\Debug\netcoreapp3.1\AddEnToPl.baml
+D:\Dokumenty\Studia\05.SEMESTR V\ZTP\projekt\TeaLearn\GUI\obj\Debug\netcoreapp3.1\AddPlToEn.baml
+D:\Dokumenty\Studia\05.SEMESTR V\ZTP\projekt\TeaLearn\GUI\obj\Debug\netcoreapp3.1\AddQuiz.baml
+D:\Dokumenty\Studia\05.SEMESTR V\ZTP\projekt\TeaLearn\GUI\obj\Debug\netcoreapp3.1\MainMenu.baml
+D:\Dokumenty\Studia\05.SEMESTR V\ZTP\projekt\TeaLearn\GUI\obj\Debug\netcoreapp3.1\MainWindow.baml
+D:\Dokumenty\Studia\05.SEMESTR V\ZTP\projekt\TeaLearn\GUI\obj\Debug\netcoreapp3.1\QuestionMenu.baml
+D:\Dokumenty\Studia\05.SEMESTR V\ZTP\projekt\TeaLearn\GUI\obj\Debug\netcoreapp3.1\QuizPage.baml
+D:\Dokumenty\Studia\05.SEMESTR V\ZTP\projekt\TeaLearn\GUI\obj\Debug\netcoreapp3.1\SettingsScreen.baml
+D:\Dokumenty\Studia\05.SEMESTR V\ZTP\projekt\TeaLearn\GUI\obj\Debug\netcoreapp3.1\TestResult.baml
+D:\Dokumenty\Studia\05.SEMESTR V\ZTP\projekt\TeaLearn\GUI\obj\Debug\netcoreapp3.1\TranslationPage.baml
+D:\Dokumenty\Studia\05.SEMESTR V\ZTP\projekt\TeaLearn\GUI\obj\Debug\netcoreapp3.1\GUI.g.resources
+D:\Dokumenty\Studia\05.SEMESTR V\ZTP\projekt\TeaLearn\GUI\obj\Debug\netcoreapp3.1\GUI.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dokumenty\Studia\05.SEMESTR V\ZTP\projekt\TeaLearn\GUI\obj\Debug\netcoreapp3.1\GUI.AssemblyInfoInputs.cache
+D:\Dokumenty\Studia\05.SEMESTR V\ZTP\projekt\TeaLearn\GUI\obj\Debug\netcoreapp3.1\GUI.AssemblyInfo.cs
+D:\Dokumenty\Studia\05.SEMESTR V\ZTP\projekt\TeaLearn\GUI\obj\Debug\netcoreapp3.1\GUI.csproj.CoreCompileInputs.cache
+D:\Dokumenty\Studia\05.SEMESTR V\ZTP\projekt\TeaLearn\GUI\obj\Debug\netcoreapp3.1\GUI.csproj.CopyComplete
+D:\Dokumenty\Studia\05.SEMESTR V\ZTP\projekt\TeaLearn\GUI\obj\Debug\netcoreapp3.1\GUI.dll
+D:\Dokumenty\Studia\05.SEMESTR V\ZTP\projekt\TeaLearn\GUI\obj\Debug\netcoreapp3.1\GUI.pdb
+D:\Dokumenty\Studia\05.SEMESTR V\ZTP\projekt\TeaLearn\GUI\obj\Debug\netcoreapp3.1\GUI.genruntimeconfig.cache
+D:\Dokumenty\Studia\05.SEMESTR V\ZTP\projekt\TeaLearn\GUI\obj\Debug\netcoreapp3.1\DetailedResult.g.cs

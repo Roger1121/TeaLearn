@@ -12,8 +12,11 @@ namespace AppLogic
         List<string> GetTranslations();
         void AddTranslation(string t);
         void SetTranslation(string t, int idx);
+        void ClearTranslations();
         int GetCorrectAnswer();
         void SetCorrectAnswer(int c);
+        MementoQuestion Save(int userAnswer);
+        void Restore(MementoQuestion memento);
     }
 
     public class Question : IQuestion
@@ -45,6 +48,10 @@ namespace AppLogic
         {
             translations[idx] = t;
         }
+        public void ClearTranslations()
+        {
+            translations = null;
+        }
         public int GetPoints()
         {
             return 1;
@@ -56,6 +63,18 @@ namespace AppLogic
         public virtual void SetCorrectAnswer(int c)
         {
             
+        }
+        public MementoQuestion Save(int userAnswer)
+        {
+            MementoQuestion memento = new MementoQuestion(this.word, this.translations, userAnswer);
+
+            return memento;
+        }
+        public void Restore(MementoQuestion memento)
+        {
+            Question q = memento.getStateQuestion();
+            this.word = q.word;
+            this.translations = q.translations;
         }
     }
 
@@ -72,6 +91,7 @@ namespace AppLogic
         {
             correctAnswer = c;
         }
+
     }
     public abstract class QuestionPoints : IQuestion
     {
@@ -81,8 +101,11 @@ namespace AppLogic
         public abstract List<string> GetTranslations();
         public abstract void AddTranslation(string t);
         public abstract void SetTranslation(string t, int idx);
+        public abstract void ClearTranslations();
         public abstract int GetCorrectAnswer();
         public abstract void SetCorrectAnswer(int c);
+        public abstract MementoQuestion Save(int userAnswer);
+        public abstract void Restore(MementoQuestion memento);
     }
 
     public class QuestionEasy : QuestionPoints
@@ -116,6 +139,10 @@ namespace AppLogic
         {
             question.SetTranslation(t, idx);
         }
+        public override void ClearTranslations()
+        {
+            question.ClearTranslations();
+        }
         public override int GetCorrectAnswer()
         {
             return question.GetCorrectAnswer();
@@ -124,6 +151,26 @@ namespace AppLogic
         {
             question.SetCorrectAnswer(c);
         }
+        public override MementoQuestion Save(int userAnswer)
+        {
+            MementoQuestion memento = new MementoQuestion(GetWord(), GetTranslations(), userAnswer);
+
+            return memento;
+        }
+
+        public override void Restore(MementoQuestion memento)
+        {
+            Question q = memento.getStateQuestion();
+            question.SetWord(q.GetWord());
+            question.ClearTranslations();
+            List<string> t = q.GetTranslations();
+            foreach (var item in t)
+            {
+                question.AddTranslation(item);
+
+            }
+        }
+
     }
 
     public class QuestionMedium : QuestionPoints
@@ -157,6 +204,10 @@ namespace AppLogic
         {
             question.SetTranslation(t, idx);
         }
+        public override void ClearTranslations()
+        {
+            question.ClearTranslations();
+        }
         public override int GetCorrectAnswer()
         {
             return question.GetCorrectAnswer();
@@ -164,6 +215,24 @@ namespace AppLogic
         public override void SetCorrectAnswer(int c)
         {
             question.SetCorrectAnswer(c);
+        }
+        public override MementoQuestion Save(int userAnswer)
+        {
+            MementoQuestion memento = new MementoQuestion(GetWord(), GetTranslations(), userAnswer);
+
+            return memento;
+        }
+        public override void Restore(MementoQuestion memento)
+        {
+            Question q = memento.getStateQuestion();
+            question.SetWord(q.GetWord());
+            question.ClearTranslations();
+            List<string> t = q.GetTranslations();
+            foreach (var item in t)
+            {
+                question.AddTranslation(item);
+
+            }
         }
     }
 
@@ -198,6 +267,10 @@ namespace AppLogic
         {
             question.SetTranslation(t, idx);
         }
+        public override void ClearTranslations()
+        {
+            question.ClearTranslations();
+        }
         public override int GetCorrectAnswer()
         {
             return question.GetCorrectAnswer();
@@ -205,6 +278,24 @@ namespace AppLogic
         public override void SetCorrectAnswer(int c)
         {
             question.SetCorrectAnswer(c);
+        }
+        public override MementoQuestion Save(int userAnswer)
+        {
+            MementoQuestion memento = new MementoQuestion(GetWord(), GetTranslations(), userAnswer);
+
+            return memento;
+        }
+        public override void Restore(MementoQuestion memento)
+        {
+            Question q = memento.getStateQuestion();
+            question.SetWord(q.GetWord());
+            question.ClearTranslations();
+            List<string> t = q.GetTranslations();
+            foreach (var item in t)
+            {
+                question.AddTranslation(item);
+
+            }
         }
     }
 }

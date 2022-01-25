@@ -62,6 +62,7 @@ namespace GUI
         {
             Random rnd = new Random();
             Logic.AddMaxPoints(question.GetPoints());
+            Logic.history.Add(new MementoQuestion(question, answer.Text));
             if (Logic.IsAnswerCorrect(question.GetTranslations(), answer.Text))
             {
                 Logic.AddPoints(question.GetPoints());
