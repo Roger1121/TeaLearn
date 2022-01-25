@@ -32,6 +32,7 @@ namespace GUI
         private void StartLearning(object sender, RoutedEventArgs e)
         {
             Random rnd = new Random();
+            Logic.OnStart(quiz);
             switch (settings.ExerciseType)
             {
                 case "Quiz":

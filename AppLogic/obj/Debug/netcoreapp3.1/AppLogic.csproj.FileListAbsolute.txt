@@ -37,3 +37,16 @@ D:\Dokumenty\Studia\05.SEMESTR V\ZTP\projekt\TeaLearn\AppLogic\obj\Debug\netcore
 D:\Dokumenty\Studia\05.SEMESTR V\ZTP\projekt\TeaLearn\AppLogic\obj\Debug\netcoreapp3.1\AppLogic.csproj.CoreCompileInputs.cache
 D:\Dokumenty\Studia\05.SEMESTR V\ZTP\projekt\TeaLearn\AppLogic\obj\Debug\netcoreapp3.1\AppLogic.dll
 D:\Dokumenty\Studia\05.SEMESTR V\ZTP\projekt\TeaLearn\AppLogic\obj\Debug\netcoreapp3.1\AppLogic.pdb
+C:\Users\leszc\Desktop\zajecia\TeaLearn\AppLogic\bin\Debug\netcoreapp3.1\AppLogic.deps.json
+C:\Users\leszc\Desktop\zajecia\TeaLearn\AppLogic\bin\Debug\netcoreapp3.1\AppLogic.dll
+C:\Users\leszc\Desktop\zajecia\TeaLearn\AppLogic\bin\Debug\netcoreapp3.1\AppLogic.pdb
+C:\Users\leszc\Desktop\zajecia\TeaLearn\AppLogic\bin\Debug\netcoreapp3.1\Interop.WMPLib.dll
+C:\Users\leszc\Desktop\zajecia\TeaLearn\AppLogic\obj\Debug\netcoreapp3.1\AppLogic.csproj.AssemblyReference.cache
+C:\Users\leszc\Desktop\zajecia\TeaLearn\AppLogic\obj\Debug\netcoreapp3.1\Interop.WMPLib.dll
+C:\Users\leszc\Desktop\zajecia\TeaLearn\AppLogic\obj\Debug\netcoreapp3.1\AppLogic.csproj.ResolveComReference.cache
+C:\Users\leszc\Desktop\zajecia\TeaLearn\AppLogic\obj\Debug\netcoreapp3.1\AppLogic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leszc\Desktop\zajecia\TeaLearn\AppLogic\obj\Debug\netcoreapp3.1\AppLogic.AssemblyInfoInputs.cache
+C:\Users\leszc\Desktop\zajecia\TeaLearn\AppLogic\obj\Debug\netcoreapp3.1\AppLogic.AssemblyInfo.cs
+C:\Users\leszc\Desktop\zajecia\TeaLearn\AppLogic\obj\Debug\netcoreapp3.1\AppLogic.csproj.CoreCompileInputs.cache
+C:\Users\leszc\Desktop\zajecia\TeaLearn\AppLogic\obj\Debug\netcoreapp3.1\AppLogic.dll
+C:\Users\leszc\Desktop\zajecia\TeaLearn\AppLogic\obj\Debug\netcoreapp3.1\AppLogic.pdb

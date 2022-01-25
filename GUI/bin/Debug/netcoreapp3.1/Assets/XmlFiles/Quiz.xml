@@ -1,31 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Questions>
 	<Question
-		word="elephant">
-		<Answer>nosorożec</Answer>
-		<Answer>guziec</Answer>
-		<Answer>słoń</Answer>
-		<Answer>żuraw</Answer>
-		<Answer>hipopotam</Answer>
-		<CorrectAnswer>3</CorrectAnswer>
-	</Question>
-	<Question
-		word="akcentować">
-		<Answer>to accent</Answer>
-		<Answer>to accept</Answer>
-		<Answer>to akcent</Answer>
-		<Answer>to agree</Answer>
-		<Answer>to access</Answer>
-		<CorrectAnswer>1</CorrectAnswer>
-	</Question>
-	<Question
-		word="at least">
-		<Answer>bynajmniej</Answer>
-		<Answer>przynajmniej</Answer>
-		<Answer>nie więcej</Answer>
-		<Answer>co najwyżej</Answer>
-		<Answer>niemniej jednak</Answer>
-		<CorrectAnswer>2</CorrectAnswer>
+		word="streetcar">
+		<Answer>skuter</Answer>
+		<Answer>samochód</Answer>
+		<Answer>trolejbus</Answer>
+		<Answer>hulajnoga</Answer>
+		<Answer>tramwaj</Answer>
+		<CorrectAnswer>5</CorrectAnswer>
 	</Question>
 	<Question
 		word="wadliwy">
@@ -37,31 +19,22 @@
 		<CorrectAnswer>3</CorrectAnswer>
 	</Question>
 	<Question
-		word="rozróżniać">
-		<Answer>to extinguish</Answer>
-		<Answer>to distinguish</Answer>
-		<Answer>difference</Answer>
-		<Answer>variety</Answer>
-		<Answer>differ</Answer>
+		word="streetcar">
+		<Answer>skuter</Answer>
+		<Answer>samochód</Answer>
+		<Answer>trolejbus</Answer>
+		<Answer>hulajnoga</Answer>
+		<Answer>tramwaj</Answer>
+		<CorrectAnswer>5</CorrectAnswer>
+	</Question>
+	<Question
+		word="at least">
+		<Answer>bynajmniej</Answer>
+		<Answer>przynajmniej</Answer>
+		<Answer>nie więcej</Answer>
+		<Answer>co najwyżej</Answer>
+		<Answer>niemniej jednak</Answer>
 		<CorrectAnswer>2</CorrectAnswer>
-	</Question>
-	<Question
-		word="selfish">
-		<Answer>samolubny</Answer>
-		<Answer>zadowolony z siebie</Answer>
-		<Answer>samowystarczalny</Answer>
-		<Answer>samobójca</Answer>
-		<Answer>samotny</Answer>
-		<CorrectAnswer>1</CorrectAnswer>
-	</Question>
-	<Question
-		word="gołąb">
-		<Answer>pigeotto</Answer>
-		<Answer>pidgeon</Answer>
-		<Answer>pigeot</Answer>
-		<Answer>pigeon</Answer>
-		<Answer>pidgey</Answer>
-		<CorrectAnswer>4</CorrectAnswer>
 	</Question>
 	<Question
 		word="streetcar">
@@ -82,33 +55,6 @@
 		<CorrectAnswer>4</CorrectAnswer>
 	</Question>
 	<Question
-		word="ściek">
-		<Answer>rain</Answer>
-		<Answer>dowry</Answer>
-		<Answer>drain</Answer>
-		<Answer>gain</Answer>
-		<Answer>stain</Answer>
-		<CorrectAnswer>3</CorrectAnswer>
-	</Question>
-	<Question
-		word="rzepa">
-		<Answer>turnip</Answer>
-		<Answer>parsnip</Answer>
-		<Answer>parsley</Answer>
-		<Answer>beetroot</Answer>
-		<Answer>carrot</Answer>
-		<CorrectAnswer>1</CorrectAnswer>
-	</Question>
-	<Question
-		word="elephant">
-		<Answer>nosorożec</Answer>
-		<Answer>guziec</Answer>
-		<Answer>słoń</Answer>
-		<Answer>żuraw</Answer>
-		<Answer>hipopotam</Answer>
-		<CorrectAnswer>3</CorrectAnswer>
-	</Question>
-	<Question
 		word="akcentować">
 		<Answer>to accent</Answer>
 		<Answer>to accept</Answer>
@@ -116,33 +62,6 @@
 		<Answer>to agree</Answer>
 		<Answer>to access</Answer>
 		<CorrectAnswer>1</CorrectAnswer>
-	</Question>
-	<Question
-		word="at least">
-		<Answer>bynajmniej</Answer>
-		<Answer>przynajmniej</Answer>
-		<Answer>nie więcej</Answer>
-		<Answer>co najwyżej</Answer>
-		<Answer>niemniej jednak</Answer>
-		<CorrectAnswer>2</CorrectAnswer>
-	</Question>
-	<Question
-		word="wadliwy">
-		<Answer>fatal</Answer>
-		<Answer>fatty</Answer>
-		<Answer>faulty</Answer>
-		<Answer>fastened</Answer>
-		<Answer>favourable</Answer>
-		<CorrectAnswer>3</CorrectAnswer>
-	</Question>
-	<Question
-		word="rozróżniać">
-		<Answer>to extinguish</Answer>
-		<Answer>to distinguish</Answer>
-		<Answer>difference</Answer>
-		<Answer>variety</Answer>
-		<Answer>differ</Answer>
-		<CorrectAnswer>2</CorrectAnswer>
 	</Question>
 	<Question
 		word="selfish">
@@ -163,15 +82,6 @@
 		<CorrectAnswer>4</CorrectAnswer>
 	</Question>
 	<Question
-		word="streetcar">
-		<Answer>skuter</Answer>
-		<Answer>samochód</Answer>
-		<Answer>trolejbus</Answer>
-		<Answer>hulajnoga</Answer>
-		<Answer>tramwaj</Answer>
-		<CorrectAnswer>5</CorrectAnswer>
-	</Question>
-	<Question
 		word="timid">
 		<Answer>słaby</Answer>
 		<Answer>powierzchowny</Answer>
@@ -181,22 +91,13 @@
 		<CorrectAnswer>4</CorrectAnswer>
 	</Question>
 	<Question
-		word="ściek">
-		<Answer>rain</Answer>
-		<Answer>dowry</Answer>
-		<Answer>drain</Answer>
-		<Answer>gain</Answer>
-		<Answer>stain</Answer>
-		<CorrectAnswer>3</CorrectAnswer>
-	</Question>
-	<Question
-		word="rzepa">
-		<Answer>turnip</Answer>
-		<Answer>parsnip</Answer>
-		<Answer>parsley</Answer>
-		<Answer>beetroot</Answer>
-		<Answer>carrot</Answer>
-		<CorrectAnswer>1</CorrectAnswer>
+		word="at least">
+		<Answer>bynajmniej</Answer>
+		<Answer>przynajmniej</Answer>
+		<Answer>nie więcej</Answer>
+		<Answer>co najwyżej</Answer>
+		<Answer>niemniej jednak</Answer>
+		<CorrectAnswer>2</CorrectAnswer>
 	</Question>
 	<Question
 		word="elephant">
@@ -208,13 +109,13 @@
 		<CorrectAnswer>3</CorrectAnswer>
 	</Question>
 	<Question
-		word="akcentować">
-		<Answer>to accent</Answer>
-		<Answer>to accept</Answer>
-		<Answer>to akcent</Answer>
-		<Answer>to agree</Answer>
-		<Answer>to access</Answer>
-		<CorrectAnswer>1</CorrectAnswer>
+		word="elephant">
+		<Answer>nosorożec</Answer>
+		<Answer>guziec</Answer>
+		<Answer>słoń</Answer>
+		<Answer>żuraw</Answer>
+		<Answer>hipopotam</Answer>
+		<CorrectAnswer>3</CorrectAnswer>
 	</Question>
 	<Question
 		word="at least">
@@ -235,24 +136,6 @@
 		<CorrectAnswer>3</CorrectAnswer>
 	</Question>
 	<Question
-		word="rozróżniać">
-		<Answer>to extinguish</Answer>
-		<Answer>to distinguish</Answer>
-		<Answer>difference</Answer>
-		<Answer>variety</Answer>
-		<Answer>differ</Answer>
-		<CorrectAnswer>2</CorrectAnswer>
-	</Question>
-	<Question
-		word="selfish">
-		<Answer>samolubny</Answer>
-		<Answer>zadowolony z siebie</Answer>
-		<Answer>samowystarczalny</Answer>
-		<Answer>samobójca</Answer>
-		<Answer>samotny</Answer>
-		<CorrectAnswer>1</CorrectAnswer>
-	</Question>
-	<Question
 		word="gołąb">
 		<Answer>pigeotto</Answer>
 		<Answer>pidgeon</Answer>
@@ -262,22 +145,13 @@
 		<CorrectAnswer>4</CorrectAnswer>
 	</Question>
 	<Question
-		word="streetcar">
-		<Answer>skuter</Answer>
-		<Answer>samochód</Answer>
-		<Answer>trolejbus</Answer>
-		<Answer>hulajnoga</Answer>
-		<Answer>tramwaj</Answer>
-		<CorrectAnswer>5</CorrectAnswer>
-	</Question>
-	<Question
-		word="timid">
-		<Answer>słaby</Answer>
-		<Answer>powierzchowny</Answer>
-		<Answer>zarozumiały</Answer>
-		<Answer>nieśmiały</Answer>
-		<Answer>zły</Answer>
-		<CorrectAnswer>4</CorrectAnswer>
+		word="rozróżniać">
+		<Answer>to extinguish</Answer>
+		<Answer>to distinguish</Answer>
+		<Answer>difference</Answer>
+		<Answer>variety</Answer>
+		<Answer>differ</Answer>
+		<CorrectAnswer>2</CorrectAnswer>
 	</Question>
 	<Question
 		word="ściek">
@@ -298,6 +172,33 @@
 		<CorrectAnswer>1</CorrectAnswer>
 	</Question>
 	<Question
+		word="akcentować">
+		<Answer>to accent</Answer>
+		<Answer>to accept</Answer>
+		<Answer>to akcent</Answer>
+		<Answer>to agree</Answer>
+		<Answer>to access</Answer>
+		<CorrectAnswer>1</CorrectAnswer>
+	</Question>
+	<Question
+		word="gołąb">
+		<Answer>pigeotto</Answer>
+		<Answer>pidgeon</Answer>
+		<Answer>pigeot</Answer>
+		<Answer>pigeon</Answer>
+		<Answer>pidgey</Answer>
+		<CorrectAnswer>4</CorrectAnswer>
+	</Question>
+	<Question
+		word="ściek">
+		<Answer>rain</Answer>
+		<Answer>dowry</Answer>
+		<Answer>drain</Answer>
+		<Answer>gain</Answer>
+		<Answer>stain</Answer>
+		<CorrectAnswer>3</CorrectAnswer>
+	</Question>
+	<Question
 		word="elephant">
 		<Answer>nosorożec</Answer>
 		<Answer>guziec</Answer>
@@ -307,6 +208,24 @@
 		<CorrectAnswer>3</CorrectAnswer>
 	</Question>
 	<Question
+		word="selfish">
+		<Answer>samolubny</Answer>
+		<Answer>zadowolony z siebie</Answer>
+		<Answer>samowystarczalny</Answer>
+		<Answer>samobójca</Answer>
+		<Answer>samotny</Answer>
+		<CorrectAnswer>1</CorrectAnswer>
+	</Question>
+	<Question
+		word="selfish">
+		<Answer>samolubny</Answer>
+		<Answer>zadowolony z siebie</Answer>
+		<Answer>samowystarczalny</Answer>
+		<Answer>samobójca</Answer>
+		<Answer>samotny</Answer>
+		<CorrectAnswer>1</CorrectAnswer>
+	</Question>
+	<Question
 		word="akcentować">
 		<Answer>to accent</Answer>
 		<Answer>to accept</Answer>
@@ -314,6 +233,42 @@
 		<Answer>to agree</Answer>
 		<Answer>to access</Answer>
 		<CorrectAnswer>1</CorrectAnswer>
+	</Question>
+	<Question
+		word="timid">
+		<Answer>słaby</Answer>
+		<Answer>powierzchowny</Answer>
+		<Answer>zarozumiały</Answer>
+		<Answer>nieśmiały</Answer>
+		<Answer>zły</Answer>
+		<CorrectAnswer>4</CorrectAnswer>
+	</Question>
+	<Question
+		word="rozróżniać">
+		<Answer>to extinguish</Answer>
+		<Answer>to distinguish</Answer>
+		<Answer>difference</Answer>
+		<Answer>variety</Answer>
+		<Answer>differ</Answer>
+		<CorrectAnswer>2</CorrectAnswer>
+	</Question>
+	<Question
+		word="ściek">
+		<Answer>rain</Answer>
+		<Answer>dowry</Answer>
+		<Answer>drain</Answer>
+		<Answer>gain</Answer>
+		<Answer>stain</Answer>
+		<CorrectAnswer>3</CorrectAnswer>
+	</Question>
+	<Question
+		word="timid">
+		<Answer>słaby</Answer>
+		<Answer>powierzchowny</Answer>
+		<Answer>zarozumiały</Answer>
+		<Answer>nieśmiały</Answer>
+		<Answer>zły</Answer>
+		<CorrectAnswer>4</CorrectAnswer>
 	</Question>
 	<Question
 		word="at least">
@@ -334,21 +289,12 @@
 		<CorrectAnswer>3</CorrectAnswer>
 	</Question>
 	<Question
-		word="rozróżniać">
-		<Answer>to extinguish</Answer>
-		<Answer>to distinguish</Answer>
-		<Answer>difference</Answer>
-		<Answer>variety</Answer>
-		<Answer>differ</Answer>
-		<CorrectAnswer>2</CorrectAnswer>
-	</Question>
-	<Question
-		word="selfish">
-		<Answer>samolubny</Answer>
-		<Answer>zadowolony z siebie</Answer>
-		<Answer>samowystarczalny</Answer>
-		<Answer>samobójca</Answer>
-		<Answer>samotny</Answer>
+		word="akcentować">
+		<Answer>to accent</Answer>
+		<Answer>to accept</Answer>
+		<Answer>to akcent</Answer>
+		<Answer>to agree</Answer>
+		<Answer>to access</Answer>
 		<CorrectAnswer>1</CorrectAnswer>
 	</Question>
 	<Question
@@ -361,6 +307,24 @@
 		<CorrectAnswer>4</CorrectAnswer>
 	</Question>
 	<Question
+		word="rzepa">
+		<Answer>turnip</Answer>
+		<Answer>parsnip</Answer>
+		<Answer>parsley</Answer>
+		<Answer>beetroot</Answer>
+		<Answer>carrot</Answer>
+		<CorrectAnswer>1</CorrectAnswer>
+	</Question>
+	<Question
+		word="selfish">
+		<Answer>samolubny</Answer>
+		<Answer>zadowolony z siebie</Answer>
+		<Answer>samowystarczalny</Answer>
+		<Answer>samobójca</Answer>
+		<Answer>samotny</Answer>
+		<CorrectAnswer>1</CorrectAnswer>
+	</Question>
+	<Question
 		word="streetcar">
 		<Answer>skuter</Answer>
 		<Answer>samochód</Answer>
@@ -370,13 +334,40 @@
 		<CorrectAnswer>5</CorrectAnswer>
 	</Question>
 	<Question
-		word="timid">
-		<Answer>słaby</Answer>
-		<Answer>powierzchowny</Answer>
-		<Answer>zarozumiały</Answer>
-		<Answer>nieśmiały</Answer>
-		<Answer>zły</Answer>
-		<CorrectAnswer>4</CorrectAnswer>
+		word="rzepa">
+		<Answer>turnip</Answer>
+		<Answer>parsnip</Answer>
+		<Answer>parsley</Answer>
+		<Answer>beetroot</Answer>
+		<Answer>carrot</Answer>
+		<CorrectAnswer>1</CorrectAnswer>
+	</Question>
+	<Question
+		word="rzepa">
+		<Answer>turnip</Answer>
+		<Answer>parsnip</Answer>
+		<Answer>parsley</Answer>
+		<Answer>beetroot</Answer>
+		<Answer>carrot</Answer>
+		<CorrectAnswer>1</CorrectAnswer>
+	</Question>
+	<Question
+		word="elephant">
+		<Answer>nosorożec</Answer>
+		<Answer>guziec</Answer>
+		<Answer>słoń</Answer>
+		<Answer>żuraw</Answer>
+		<Answer>hipopotam</Answer>
+		<CorrectAnswer>3</CorrectAnswer>
+	</Question>
+	<Question
+		word="rozróżniać">
+		<Answer>to extinguish</Answer>
+		<Answer>to distinguish</Answer>
+		<Answer>difference</Answer>
+		<Answer>variety</Answer>
+		<Answer>differ</Answer>
+		<CorrectAnswer>2</CorrectAnswer>
 	</Question>
 	<Question
 		word="ściek">
@@ -388,12 +379,21 @@
 		<CorrectAnswer>3</CorrectAnswer>
 	</Question>
 	<Question
-		word="rzepa">
-		<Answer>turnip</Answer>
-		<Answer>parsnip</Answer>
-		<Answer>parsley</Answer>
-		<Answer>beetroot</Answer>
-		<Answer>carrot</Answer>
-		<CorrectAnswer>1</CorrectAnswer>
+		word="rozróżniać">
+		<Answer>to extinguish</Answer>
+		<Answer>to distinguish</Answer>
+		<Answer>difference</Answer>
+		<Answer>variety</Answer>
+		<Answer>differ</Answer>
+		<CorrectAnswer>2</CorrectAnswer>
+	</Question>
+	<Question
+		word="wadliwy">
+		<Answer>fatal</Answer>
+		<Answer>fatty</Answer>
+		<Answer>faulty</Answer>
+		<Answer>fastened</Answer>
+		<Answer>favourable</Answer>
+		<CorrectAnswer>3</CorrectAnswer>
 	</Question>
 </Questions>

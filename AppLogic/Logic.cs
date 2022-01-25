@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using WMPLib;
 
@@ -36,6 +37,55 @@ namespace AppLogic
         public static void ClearHistory()
         {
             history = null;
+        }
+
+        private static QuestionIterator questionIterator = new QuestionIterator();
+
+        public static void OnStart(List<QuizQuestion> quiz)
+        {
+            List<QuizQuestion> questions = quiz;
+            questions.Shuffle();
+            questionIterator = new QuestionIterator(questions);
+        }
+        private static Random rng = new Random();
+        public static void Shuffle<T>(this IList<T> list)
+        {
+            int n = list.Count;
+            while (n > 1)
+            {
+                n--;
+                int k = rng.Next(n + 1);
+                T value = list[k];
+                list[k] = list[n];
+                list[n] = value;
+            }
+        }
+        public class MyIterator : IEnumerable<QuizQuestion>
+        {
+            private List<QuizQuestion> questionsQuiz;
+
+            //
+            public MyIterator(List<QuizQuestion> quiz)
+            {
+                this.questionsQuiz = quiz;
+            }
+            // Random rnd = new Random();
+            //int index = rnd.Next(questionsQuiz.Count);
+            // QuizQuestion temp = questionsQuiz[index];
+            //QuizQuestion question = new QuizQuestion(temp.GetWord());
+
+            public IEnumerator<QuizQuestion> GetEnumerator()
+            {
+                foreach (var item in questionsQuiz)
+                {
+                    yield return item;
+                }
+            }
+
+            IEnumerator IEnumerable.GetEnumerator()
+            {
+                throw new NotImplementedException();
+            }
         }
 
         public static void AddPoints(int p)
@@ -155,31 +205,37 @@ namespace AppLogic
 
         public static QuizQuestion GetRandomQuizQuestion(List<QuizQuestion> quiz, int numberOfAnswers = 0)
         {
-            Random rnd = new Random();
-            int index = rnd.Next(quiz.Count);
-            QuizQuestion temp = quiz[index];
-            QuizQuestion question = new QuizQuestion(temp.GetWord());
-            int answerCount = (numberOfAnswers == 0 ? rnd.Next(2, 6) : numberOfAnswers);
-
-            while (question.GetTranslations().Count < answerCount)
+            if (questionIterator.hasNext())
             {
-                string answer = temp.GetTranslations()[rnd.Next(5)];
-                if (!question.GetTranslations().Contains(answer))
+                Random rnd = new Random();
+                QuizQuestion temp = questionIterator.next();
+                QuizQuestion question = new QuizQuestion(temp.GetWord());
+                int answerCount = (numberOfAnswers == 0 ? rnd.Next(2, 6) : numberOfAnswers);
+                while (question.GetTranslations().Count < answerCount)
                 {
-                    question.AddTranslation(answer);
-                    if (answer == temp.GetTranslations()[temp.GetCorrectAnswer() - 1])
+                    string answer = temp.GetTranslations()[rnd.Next(5)];
+                    if (!question.GetTranslations().Contains(answer))
                     {
-                        question.SetCorrectAnswer(question.GetTranslations().Count);
+                        question.AddTranslation(answer);
+                        if (answer == temp.GetTranslations()[temp.GetCorrectAnswer() - 1])
+                        {
+                            question.SetCorrectAnswer(question.GetTranslations().Count);
+                        }
                     }
                 }
+                if (!question.GetTranslations().Contains(temp.GetTranslations()[temp.GetCorrectAnswer() - 1]))
+                {
+                    int correctIndex = rnd.Next(answerCount);
+                    question.SetTranslation(temp.GetTranslations()[temp.GetCorrectAnswer() - 1], correctIndex);
+                    question.SetCorrectAnswer(correctIndex + 1);
+                }
+                return question;
             }
-            if (!question.GetTranslations().Contains(temp.GetTranslations()[temp.GetCorrectAnswer() - 1]))
+            else
             {
-                int correctIndex = rnd.Next(answerCount);
-                question.SetTranslation(temp.GetTranslations()[temp.GetCorrectAnswer() - 1], correctIndex);
-                question.SetCorrectAnswer(correctIndex + 1);
+                OnStart(quiz);
+                return GetRandomQuizQuestion(quiz, numberOfAnswers);
             }
-            return question;
         }
 
         public static Question GetRandomQuestion(List<Question> list, List<Question> list2 = null)
