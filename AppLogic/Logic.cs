@@ -60,28 +60,6 @@ namespace AppLogic
                 list[n] = value;
             }
         }
-        public class MyIterator : IEnumerable<QuizQuestion>
-        {
-            private List<QuizQuestion> questionsQuiz;
-
-            public MyIterator(List<QuizQuestion> quiz)
-            {
-                this.questionsQuiz = quiz;
-            }
-
-            public IEnumerator<QuizQuestion> GetEnumerator()
-            {
-                foreach (var item in questionsQuiz)
-                {
-                    yield return item;
-                }
-            }
-
-            IEnumerator IEnumerable.GetEnumerator()
-            {
-                throw new NotImplementedException();
-            }
-        }
 
         public static void AddPoints(int p)
         {

@@ -85,6 +85,7 @@ namespace GUI
         private void Quit(object sender, RoutedEventArgs e)
         {
             MainMenu menu = new MainMenu(settings, polishToEnglish, englishToPolish, quiz);
+            Logic.ClearHistory();
             NavigationService.Navigate(menu);
         }
     }
